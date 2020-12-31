@@ -1,0 +1,23 @@
+<div class="tab-pane fade in active" id="{% block service-id %}{% endblock %}">
+    <div class="section-text">
+        <div class="row">
+            <div class="col-md-4 mb-md-40 mb-xs-30">
+                <blockquote class="mb-0">
+                    <p>
+                        {% block service-quote %}{% endblock %}
+                    </p>
+                    <footer>
+                        {% block service-quote-footer %}{% endblock %}
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                {% block service-description1 %}{% endblock %}
+            </div>
+            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                {% block service-description2 %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+</div>

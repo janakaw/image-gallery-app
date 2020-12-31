@@ -1,0 +1,42 @@
+<section class="page-section" id="about">
+    <div class="container relative">
+
+        <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+            {% block about-title %}{% endblock %}
+        </h2>
+
+        <div class="section-text mb-50 mb-sm-20">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <blockquote>
+                        <p>
+                        {% block quote %}{% endblock %}
+                        </p>
+                        <footer>
+                            {% block quote-author %}{% endblock %}
+                        </footer>
+                    </blockquote>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                   {% block description1 %}{% endblock %}
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                    {% block description2 %}{% endblock %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            {% for team-item in team-items %}
+                {{ team-item }}
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>

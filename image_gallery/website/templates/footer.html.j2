@@ -1,0 +1,41 @@
+<footer class="page-section bg-gray-lighter footer pb-60">
+    <div class="container">
+
+        <!-- Footer Logo -->
+        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <a href="#top"><img src="{% block footer-logo %}{% endblock %}" width="78" height="36" alt="Company logo" /><span class="sr-only">Scroll to the top of the page</span></a>
+        </div>
+        <!-- End Footer Logo -->
+
+        <!-- Social Links -->
+        <div class="footer-social-links mb-110 mb-xs-60">
+            <div class="sr-only">{% block footer-social-media-title %}{% endblock %}:</div>\
+            {% for social-media-item in social-media-items %}
+            {% endfor %}
+        </div>
+        <!-- End Social Links -->
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+
+            <!-- Copyright -->
+            <div class="footer-copy font-alt">
+                <a href="https://sk3drender.com.au" target="_blank">&copy; SK3DRender 2020</a>.
+            </div>
+            <!-- End Copyright -->
+
+
+
+        </div>
+        <!-- End Footer Text -->
+
+    </div>
+
+
+    <!-- Top Link -->
+    <div class="local-scroll">
+     <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- End Top Link -->
+
+</footer>

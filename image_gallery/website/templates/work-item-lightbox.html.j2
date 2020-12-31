@@ -1,0 +1,13 @@
+<li class="work-item mix photography">
+    <a href="{% block project-main-image %}{% endblock %}" class="work-lightbox-link mfp-image">
+        <div class="work-img">
+            <img src="{% block project-image %}{% endblock %}" alt="Work" />
+        </div>
+        <div class="work-intro">
+            <h3 class="work-title">{% block project-title %}{% endblock %}</h3>
+            <div class="work-descr">
+                {% block project-description %}{% endblock %}
+            </div>
+        </div>
+    </a>
+</li>

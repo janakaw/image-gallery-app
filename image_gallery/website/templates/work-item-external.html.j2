@@ -1,0 +1,13 @@
+<li class="work-item mix branding design">
+    <a href="{% block project-external-page %}{% endblock %}" class="work-ext-link">
+        <div class="work-img">
+            <img class="work-img" src="{% block project-image %}{% endblock %}" alt="Work" />
+        </div>
+        <div class="work-intro">
+            <h3 class="work-title">{% block project-title %}{% endblock %}</h3>
+            <div class="work-descr">
+                {% block project-description %}{% endblock %}
+            </div>
+        </div>
+    </a>
+</li>

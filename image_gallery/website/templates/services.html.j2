@@ -1,0 +1,27 @@
+<section class="page-section" id="services">
+    <div class="container relative">
+
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Services
+        </h2>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0">
+            {% for service-nav-item in service-nav-items %}
+                {{ service-nav-item }}
+            {% endfor %}
+        </ul>
+        <!-- End Nav tabs -->
+
+        <!-- Tab panes -->
+        <div class="tab-content tpl-tabs-cont">
+
+            {% for service-item in service-items %}
+                {{ service-item }}
+            {% endfor %}
+
+        </div>
+        <!-- End Tab panes -->
+
+    </div>
+</section>

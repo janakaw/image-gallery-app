@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% block head %}
+    {% endblock %}
+
+    <body class="appear-animate">
+        
+        <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Page Loader -->
+
+        <!-- Skip to Content -->
+        <a href="#main" class="btn skip-to-content">Skip to Content</a>
+        <!-- End Skip to Content -->
+        
+        <!-- Page Wrap -->
+        <div class="page" id="top">
+            
+            <!-- Navigation panel -->
+            {% block nav-panel %}{% endblock %}
+            <!-- End Navigation panel -->
+            
+            <main id="main">
+            
+                <!-- Home Section -->
+                <div class="home-section fullscreen-container" id="home">
+                    <div class="fullscreenbanner bg-dark">
+                        <ul>
+                            
+                            <!-- Slide Item -->
+                            {% for slider in sliders %}
+                                {{ slider }}
+                            {% endfor %}
+                            <!-- End Slide Item -->
+
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom"></div> 
+                    </div>
+                </div>
+                <!-- End Home Section -->
+
+
+                <!-- Divider -->
+                <hr class="mt-0 mb-0 "/>
+                <!-- End Divider -->
+
+
+                <!-- Services Section -->
+                {% block services %}{% endblock %}
+                <!-- End Services Section -->
+
+
+                <!-- Portfolio Section -->
+                {% block portfolio %}{% endblock %}
+                <!-- End Portfolio Section -->
+
+
+                <!-- About Section -->
+                {% block about %}{% endblock %}
+                <!-- End About Section -->
+
+
+                <!-- Contact Section -->
+                {% block contact %}{% endblock %}
+                <!-- End Contact Section -->
+
+
+            </main>
+
+
+            <!-- Footer -->
+            {% block footer %}{% endblock %}
+            <!-- End Footer -->
+
+
+        </div>
+        <!-- End Page Wrap -->
+
+
+        <!-- JS -->
+        {% block js-block %}{% endblock %}
+
+
+    </body>
+</html>

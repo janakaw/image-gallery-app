@@ -3,6 +3,7 @@ from django.http import FileResponse, HttpResponse, HttpResponseNotFound, JsonRe
 
 from .utils import ProjectUtils
 
+
 def get_image(request):
     return HttpResponse('<h1>test</h1>')
 
