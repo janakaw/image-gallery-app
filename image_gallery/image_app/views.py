@@ -47,3 +47,11 @@ def get_slider_image(request):
     except Exception as e:
         return HttpResponseNotFound(str(e))
 
+
+def get_slider_text(request):
+    slider_id = request.GET.get('slider_id', '0')
+    try:
+        proj_utils = ProjectUtils()
+        return JsonResponse(proj_utils.get_slider_text(slider_id))
+    except Exception as e:
+        return HttpResponseNotFound(str(e))

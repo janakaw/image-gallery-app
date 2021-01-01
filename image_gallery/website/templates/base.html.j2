@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    {% block head %}
-    {% endblock %}
+    {% include 'head.html.j2' %}
 
     <body class="appear-animate">
         
@@ -20,7 +19,7 @@
         <div class="page" id="top">
             
             <!-- Navigation panel -->
-            {% block nav-panel %}{% endblock %}
+            {% include 'navigation.html.j2' %}
             <!-- End Navigation panel -->
             
             <main id="main">
@@ -32,8 +31,19 @@
                             
                             <!-- Slide Item -->
                             {% for slider in sliders %}
-                                {{ slider }}
+                                <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
+
+                                    <img src="{{ slider.img }}" alt="">
+                                    {% include 'slider-item-part1.html.j2' %}
+                                    {{ slider.title }}
+                                    {% include 'slider-item-part2.html.j2' %}
+                                    {{ slider.caption }}
+                                    {% include 'slider-item-part3.html.j2' %}
+                                    <!--  <a href="{% block slider-video-uri %}{% endblock %}" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">{% block play-caption %}{% endblock %}</a> -->
+                                    {% include 'slider-item-part4.html.j2' %}
+                                </li>
                             {% endfor %}
+
                             <!-- End Slide Item -->
 
                         </ul>
@@ -72,7 +82,7 @@
 
 
             <!-- Footer -->
-            {% block footer %}{% endblock %}
+            {% include 'footer.html.j2' %}
             <!-- End Footer -->
 
 
@@ -81,7 +91,7 @@
 
 
         <!-- JS -->
-        {% block js-block %}{% endblock %}
+        {% include 'scripts.html.j2' %}
 
 
     </body>

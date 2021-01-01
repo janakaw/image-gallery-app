@@ -1,3 +1,4 @@
+import json
 import os
 from pathlib import Path
 
@@ -39,3 +40,11 @@ class ProjectUtils:
         slider_path = ProjectUtils.slider_path / cls.sliders[int(slider_id)]
         slider_img = open(str(slider_path), 'rb')
         return slider_img
+
+    @classmethod
+    def get_slider_text(cls, slider_id):
+        slider_text_path = ProjectUtils.slider_path / f"{str(int(slider_id) + 1)}.json"
+        with open(str(slider_text_path), 'rb') as f:
+            slider_text = json.load(f)
+            return slider_text
+
