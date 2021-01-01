@@ -35,9 +35,9 @@
 
                                     <img src="{{ slider.img }}" alt="">
                                     {% include 'slider-item-part1.html.j2' %}
-
-                                    {% include 'slider-item-part2.html.j2' %}
                                     {{ slider.caption }}
+                                    {% include 'slider-item-part2.html.j2' %}
+
                                     {% include 'slider-item-part3.html.j2' %}
                                     <!--  <a href="{% block slider-video-uri %}{% endblock %}" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">{% block play-caption %}{% endblock %}</a> -->
                                     {% include 'slider-item-part4.html.j2' %}
@@ -69,7 +69,8 @@
                 {% include 'portfolio-part3.html.j2' %}
                 {% for project in projects %}
                     <li class="work-item mix photography">
-                        <a href="{{ project.main_image }}" class="work-lightbox-link mfp-image">
+                        {% load static %}
+                        <a href="{% static 'images/blank.jpg' %}" id="{{ project.id }}"  onclick="testgal(this.id)" class="work-lightbox-link mfp-image">
                             <div class="work-img">
                                 <img src="{{ project.image }}" alt="Work" />
                             </div>
@@ -80,11 +81,20 @@
                                 </div>
                             </div>
                         </a>
+                        <div>
+                          <ul id="{{ project.id }}_1" style="display: none;" >
+                          {% for image_url in project.images %}
+                            <li><img src="{{ image_url }}" style="display: none;" alt="work image"></li>
+                          {% endfor %}
+                          </ul>
+                        </div>
+
                     </li>
                 {% endfor %}
                 {% include 'portfolio-part4.html.j2' %}
 
                 <!-- End Portfolio Section -->
+
 
 
                 <!-- About Section -->

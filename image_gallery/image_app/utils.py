@@ -1,3 +1,4 @@
+import glob
 import json
 import os
 from pathlib import Path
@@ -16,7 +17,7 @@ class ProjectUtils:
 
     @staticmethod
     def get_projects():
-        ProjectUtils.projects = [name for name in os.listdir(ProjectUtils.project_path)]
+        ProjectUtils.projects = [ name for name in os.listdir(ProjectUtils.project_path)]
         return ProjectUtils.projects
 
     @classmethod
@@ -26,8 +27,16 @@ class ProjectUtils:
         return img
 
     @classmethod
-    def get_project_image(cls, project_id):
-        file_path = cls.project_path / cls.projects[int(project_id)] / "0.jpg"
+    def get_project_image_list(cls, project_id):
+        images = []
+        project_path = f"{str(cls.project_path / cls.projects[int(project_id)])}/[0-9].jpg"
+        for f in glob.glob(project_path):
+            images.append(os.path.basename(Path(f)).replace(".jpg", ""))
+        return images
+
+    @classmethod
+    def get_project_image(cls, project_id, image_id):
+        file_path = cls.project_path / cls.projects[int(project_id) ] / f"{image_id}.jpg"
         img = open(str(file_path), 'rb')
         return img
 

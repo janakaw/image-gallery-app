@@ -8,15 +8,32 @@ import urllib.request
 def render_page(request):
     projects = get_work_items()
     sliders = []
-    project_list = [21, 1, 16, 13]
+    project_list = [
+        {
+            "proj_id": "14",
+            "image_id": "H900-0"
+        },
+        {
+            "proj_id": "17",
+            "image_id": "H900-16"
+        },
+        {
+            "proj_id": "26",
+            "image_id": "H900-1"
+        },
+        {
+            "proj_id": "29",
+            "image_id": "H900-17"
+        }
+    ]
 
     for i in project_list:
-        text_url = urllib.request.urlopen(f'http://localhost:8000/image/project_text?project_id={i}')
+        text_url = urllib.request.urlopen(f'http://localhost:8000/image/project_text?project_id={i["proj_id"]}')
         text_json = json.load(text_url)
         text = text_json["text"].replace('Residential', '').replace('Commercial', '').split(',')
 
         slider = {
-            "img": f"image/slider_image?slider_id={i}",
+            "img": f'http://localhost:8000/image/project_image?project_id={i["proj_id"]}&image_id={i["image_id"]}',
             "caption": text[0],
             "title": text[1]
         }
@@ -37,14 +54,22 @@ def get_work_items():
     len_projects = len(projects_json["projects"])
     for i in range(1, len_projects):
         text_url = urllib.request.urlopen(f'http://localhost:8000/image/project_text?project_id={i}')
+        image_list = urllib.request.urlopen(f'http://localhost:8000/image/project_image_list?project_id={i}')
+        images_json = json.load(image_list)
         text_json = json.load(text_url)
         text = text_json["text"]
         text = text.replace("Commercial", "").replace("Residential", "")
-        print(text)
+
+        image_url_list = []
+        for j in images_json["images"]:
+            image_url_list.append(f'http://localhost:8000/image/project_image?project_id={i}&image_id={j}')
+
         # = urllib.request.urlopen()
         project = {
+            "id": f"project_{i}",
             "main_image": f'http://localhost:8000/image/project_image?project_id={i}',
             "image": f'http://localhost:8000/image/project_cover_image?project_id={i}',
+            "images": image_url_list,
             "title": "",
             "description": text
         }
