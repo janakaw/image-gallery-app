@@ -10,11 +10,21 @@ def get_projects(request):
     return JsonResponse(test_projects)
 
 
-def get_project_image(request):
+def get_project_cover_image(request):
     project_id = request.GET.get('project_id', '0')
     try:
         proj_utils = ProjectUtils()
         img = proj_utils.get_project_cover_image(project_id)
+        return FileResponse(img)
+    except Exception as e:
+        return HttpResponseNotFound(str(e))
+
+
+def get_project_image(request):
+    project_id = request.GET.get('project_id', '0')
+    try:
+        proj_utils = ProjectUtils()
+        img = proj_utils.get_project_image(project_id)
         return FileResponse(img)
     except Exception as e:
         return HttpResponseNotFound(str(e))

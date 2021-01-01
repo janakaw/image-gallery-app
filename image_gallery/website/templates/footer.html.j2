@@ -3,16 +3,12 @@
 
         <!-- Footer Logo -->
         <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <a href="#top"><img src="{% block footer-logo %}{% endblock %}" width="78" height="36" alt="Company logo" /><span class="sr-only">Scroll to the top of the page</span></a>
+             {% load static %}
+             <a href="#top"><img src="{% static 'images/logo.png' %}" width="78" height="36" alt="ReflectSquare" /><span class="sr-only">Scroll to the top of the page</span></a>
         </div>
         <!-- End Footer Logo -->
 
-        <!-- Social Links -->
-        <div class="footer-social-links mb-110 mb-xs-60">
-            <div class="sr-only">{% block footer-social-media-title %}{% endblock %}:</div>\
 
-        </div>
-        <!-- End Social Links -->
 
         <!-- Footer Text -->
         <div class="footer-text">

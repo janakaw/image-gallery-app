@@ -26,6 +26,12 @@ class ProjectUtils:
         return img
 
     @classmethod
+    def get_project_image(cls, project_id):
+        file_path = cls.project_path / cls.projects[int(project_id)] / "0.jpg"
+        img = open(str(file_path), 'rb')
+        return img
+
+    @classmethod
     def get_project_text(cls, project_id):
         project_text = cls.projects[int(project_id)]
         return project_text

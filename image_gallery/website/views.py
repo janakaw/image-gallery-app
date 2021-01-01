@@ -39,12 +39,13 @@ def get_work_items():
         text_url = urllib.request.urlopen(f'http://localhost:8000/image/project_text?project_id={i}')
         text_json = json.load(text_url)
         text = text_json["text"]
+        text = text.replace("Commercial", "").replace("Residential", "")
         print(text)
         # = urllib.request.urlopen()
         project = {
             "main_image": f'http://localhost:8000/image/project_image?project_id={i}',
-            "image": f'http://localhost:8000/image/project_image?project_id={i}',
-            "title": text,
+            "image": f'http://localhost:8000/image/project_cover_image?project_id={i}',
+            "title": "",
             "description": text
         }
         projects.append(project)
