@@ -37,7 +37,7 @@ class ProjectUtils:
 
     @classmethod
     def get_slider_image(cls, slider_id):
-        slider_path = ProjectUtils.slider_path / cls.sliders[int(slider_id)]
+        slider_path = ProjectUtils.slider_path / f"H900-{int(slider_id)}.jpg"
         slider_img = open(str(slider_path), 'rb')
         return slider_img
 

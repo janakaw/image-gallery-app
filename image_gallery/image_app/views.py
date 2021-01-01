@@ -25,7 +25,8 @@ def get_project_text(request):
     try:
         proj_utils = ProjectUtils()
         text = proj_utils.get_project_text(project_id)
-        return HttpResponse(text)
+        response = { "text": text}
+        return JsonResponse(response)
     except Exception as e:
         return HttpResponseNotFound(str(e))
 

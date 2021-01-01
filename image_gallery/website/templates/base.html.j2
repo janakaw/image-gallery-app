@@ -31,11 +31,11 @@
                             
                             <!-- Slide Item -->
                             {% for slider in sliders %}
-                                <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
+                                <li data-transition="fade" data-slotamount="7" data-delay="4000" data-title="Intro Slide">
 
                                     <img src="{{ slider.img }}" alt="">
                                     {% include 'slider-item-part1.html.j2' %}
-                                    {{ slider.title }}
+
                                     {% include 'slider-item-part2.html.j2' %}
                                     {{ slider.caption }}
                                     {% include 'slider-item-part3.html.j2' %}
@@ -59,12 +59,31 @@
 
 
                 <!-- Services Section -->
-                {% block services %}{% endblock %}
+
                 <!-- End Services Section -->
 
 
                 <!-- Portfolio Section -->
-                {% block portfolio %}{% endblock %}
+                {% include 'portfolio-part1.html.j2' %}
+                {% include 'portfolio-part2.html.j2' %}
+                {% include 'portfolio-part3.html.j2' %}
+                {% for project in projects %}
+                    <li class="work-item mix photography">
+                        <a href="{{ project.main_image }}" class="work-lightbox-link mfp-image">
+                            <div class="work-img">
+                                <img src="{{ project.image }}" alt="Work" />
+                            </div>
+                            <div class="work-intro">
+                                <h3 class="work-title">{{ project.title }}</h3>
+                                <div class="work-descr">
+                                    {{ project.description }}
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+                {% include 'portfolio-part4.html.j2' %}
+
                 <!-- End Portfolio Section -->
 
 
