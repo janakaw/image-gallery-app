@@ -63,7 +63,6 @@
                 <!-- End Services Section -->
 
 
-                <div id="portfolio" class="container"></div>
                 <!-- Portfolio Section -->
                 {% include 'portfolio-part1.html.j2' %}
                 {% include 'portfolio-part2.html.j2' %}
@@ -72,7 +71,7 @@
                     <li class="work-item mix photography">
                         <!-- <a href="" id="{{ project.id }}"  onclick="testgal(this.id)" class="mfp-image"> -->
                         {% load static %}
-                        <div id="{{ project.id }}"  onclick="testgal(this.id)" >
+                        <div id="{{ project.id }}"  onclick="show_project(this.id)" >
                             <div class="work-img">
 
                                 <img src="{{ project.image }}" alt="Work" />
