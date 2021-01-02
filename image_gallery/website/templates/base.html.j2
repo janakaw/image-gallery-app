@@ -63,15 +63,18 @@
                 <!-- End Services Section -->
 
 
+                <div id="portfolio" class="container"></div>
                 <!-- Portfolio Section -->
                 {% include 'portfolio-part1.html.j2' %}
                 {% include 'portfolio-part2.html.j2' %}
                 {% include 'portfolio-part3.html.j2' %}
                 {% for project in projects %}
                     <li class="work-item mix photography">
+                        <!-- <a href="" id="{{ project.id }}"  onclick="testgal(this.id)" class="mfp-image"> -->
                         {% load static %}
-                        <a href="{% static 'images/blank.jpg' %}" id="{{ project.id }}"  onclick="testgal(this.id)" class="work-lightbox-link mfp-image">
+                        <div id="{{ project.id }}"  onclick="testgal(this.id)" >
                             <div class="work-img">
+
                                 <img src="{{ project.image }}" alt="Work" />
                             </div>
                             <div class="work-intro">
@@ -80,7 +83,8 @@
                                     {{ project.description }}
                                 </div>
                             </div>
-                        </a>
+                        </div>
+                        <!-- </a> -->
                         <div>
                           <ul id="{{ project.id }}_1" style="display: none;" >
                           {% for image_url in project.images %}
