@@ -2,23 +2,121 @@
     <div class="container relative">
 
         <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Services
+            Our Services
         </h2>
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs tpl-alt-tabs font-alt pt-30 pt-sm-0 pb-30 pb-sm-0">
-            {% for service-nav-item in service-nav-items %}
-                {{ service-nav-item }}
-            {% endfor %}
+             <li class="active">
+                <a href="#residential" data-toggle="tab">
+
+                    <div class="alt-tabs-icon">
+                        <span class="icon-key"></span>
+                    </div>
+
+                    Residential Interior & Exterior
+                </a>
+            </li>
+            <li class="active">
+                <a href="#commercial" data-toggle="tab">
+
+                    <div class="alt-tabs-icon">
+                        <span class="icon-layers"></span>
+                    </div>
+
+                    Commercial Interior & Exterior
+                </a>
+            </li>
+            <li class="active">
+                <a href="#3d-floor-plans" data-toggle="tab">
+
+                    <div class="alt-tabs-icon">
+                        <span class="icon-tools"></span>
+                    </div>
+
+                    3D Floor Plans
+                </a>
+            </li>
         </ul>
         <!-- End Nav tabs -->
 
         <!-- Tab panes -->
         <div class="tab-content tpl-tabs-cont">
 
-            {% for service-item in service-items %}
-                {{ service-item }}
-            {% endfor %}
+            <div class="tab-pane fade in active" id="residential">
+                <div class="section-text">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-40 mb-xs-30">
+                            <blockquote class="mb-0">
+                                <p>
+                                    Residential Interior & Exterior
+                                </p>
+                                <footer>
+                                    Residential Projects
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            Provide us with 2D floor plan and we will create 3D model.
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            Client selects camera views and we will come up with HD views with landscaping and people.
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end tab -->
+
+            <div class="tab-pane fade in active" id="commercial">
+                <div class="section-text">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-40 mb-xs-30">
+                            <blockquote class="mb-0">
+                                <p>
+                                    Commercial Interior & Exterior
+                                </p>
+                                <footer>
+                                    Commercial Projects
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            Reflect Square has done visualisations for Centerlink Offices, Townhouse Complexes, Shopping Centers, Childcare Centers,
+                            Restaurants and many other commercial projects.
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            Reflect Square will accommodate specific project needs to deliver visualisations with a number of revisions.
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end tab -->
+
+
+            <div class="tab-pane fade in active" id="3d-floor-plans">
+                <div class="section-text">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-40 mb-xs-30">
+                            <blockquote class="mb-0">
+                                <p>
+                                    3D Floor Plans
+                                </p>
+                                <footer>
+                                    Commercial or Residential
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            Reflect Square has done 3D floor plans for many commercial and residential projects.
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            Client can request interior details needed.
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end tab -->
+
 
         </div>
         <!-- End Tab panes -->
