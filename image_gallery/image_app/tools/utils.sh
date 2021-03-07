@@ -1,7 +1,6 @@
 #!/bin/bash
 
 base_images=()
-projects=()
 
 function rem_pattern() {
   find . -name "$1" -exec rm "{}" +
@@ -10,7 +9,56 @@ function rem_pattern() {
 function get_project_dirs() {
   (
     IFS=$'\n'
-    projects=($(find ./* -type d  ! -iname ".*"  -exec basename {} \;))
+    projects=($(find ./Project/* -type d  ! -iname ".*"  -exec basename {} \;))
+    echo $(IFS=$';'; echo "${projects[*]}")
+  )
+}
+
+function rename_files() {
+  (
+    IFS=$'\n'
+    files=($(find ./slider/* -type f -name "H900-[0-9]*.jpg"   -exec basename {} \;))
+    mkdir -p "slider/new"
+    for i in "${!files[@]}"; do
+      printf "*******%s\n" "${files[i]}"
+      cp "slider/${files[i]}" "slider/new/H900-${i}.jpg"
+    done
+  )
+}
+
+function count_files() {
+  IFS=$'\n'
+  projects=($(find ./projects/* -type d  -name "[0-9]*"  -exec basename {} \;))
+  if [ -f "./json/projects" ]; then
+    rm "./json/projects"
+  fi
+  touch "./json/projects"
+  for i in "${!projects[@]}"; do
+      count=$(find "./projects/${projects[i]}/" -type f -name "H380-[0-9]*.jpg" -print | wc -l)
+      desc=$(cat "./projects/${projects[i]}/text")
+      printf "%s %s %s\n" "${projects[i]}" "$desc" "$count" >> ./json/projects
+  done
+}
+
+function create_index_list() {
+  projects_str=$(get_project_dirs)
+  projects=(${projects_str//;/ })
+  mkdir -p "projects"
+  for i in "${!projects[@]}"; do
+      printf "*******%s\n" "${projects[i]}"
+      cp -r "Project/${projects[i]}/" "projects/${i}"
+      echo "${projects[i]}" > "projects/${i}/text"
+  done
+}
+
+function del_numeric() {
+    (
+    IFS=$'\n'
+    num_dirs=($(find ./* -type d -name "[0-9]*"  -exec basename {} \;))
+    for i in "${!num_dirs[@]}"; do
+      printf "%s\n" "${num_dirs[i]}"
+      rm -rf "${num_dirs[i]}"
+    done
   )
 }
 

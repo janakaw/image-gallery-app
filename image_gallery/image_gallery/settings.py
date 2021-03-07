@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '_dfoe4l*1=ke@g7zfb=(w7f2#-pn+0y6k1ur03)43m4jq&xakl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
+#CSRF_COOKIE_SECURE = True
+#SESSION_COOKIE_SECURE = True
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'image_app',
+    'website',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +71,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'image_gallery.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -117,9 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-
+STATIC_URL = 'http://localhost/static/'
+STATIC_ROOT = '/var/image_gallery/static'
 STATICFILES_DIRS = [
     BASE_DIR / 'website' / 'static',
-    '/var/www/static/',
 ]

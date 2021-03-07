@@ -1,0 +1,13 @@
+{
+  "sliders": [
+    {"img": "http://localhost/static/slider/H900-1.jpg", "caption": "_Whyllar_ACT", "title": "_Developer"},
+    {"img": "http://localhost/static/slider/H900-2.jpg", "caption": "_WagaWaga_Centerlink_NSW", "title": "_Architect"}
+  ],
+  "projects": [
+    {
+      "id": "project_1", "main_image": "http://localhost/static/projects/1/0.jpg",
+      "image": "http://localhost/static/projects/1/0.jpg",
+      ",images": ["http://localhost/static/projects/1/H380-0.jpg"], ",title": "", "description": "_3d_floor_plan,_Property_developer"
+    }
+  ]
+}

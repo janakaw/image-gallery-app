@@ -8,8 +8,8 @@ class ProjectUtils:
 
     projects = []
     sliders = []
-    project_path = Path('/opt/images/Project')
-    slider_path = Path('/opt/images/slider')
+    project_path = Path('/var/image_gallery/static/images/images-gallery/Project')
+    slider_path = Path('/var/image_gallery/static/images/images-gallery/slider')
 
     def __init__(self):
         self.get_projects()
@@ -29,14 +29,17 @@ class ProjectUtils:
     @classmethod
     def get_project_image_list(cls, project_id):
         images = []
-        project_path = f"{str(cls.project_path / cls.projects[int(project_id)])}/[0-9].jpg"
+        proj_path = cls.project_path
+        proj_dir = cls.projects[int(project_id)]
+
+        project_path = "{}/{}/[0-9].jpg".format(proj_path, proj_dir)
         for f in glob.glob(project_path):
             images.append(os.path.basename(Path(f)).replace(".jpg", ""))
         return images
 
     @classmethod
     def get_project_image(cls, project_id, image_id):
-        file_path = cls.project_path / cls.projects[int(project_id) ] / f"{image_id}.jpg"
+        file_path = cls.project_path / cls.projects[int(project_id)] / "{}.jpg".format(image_id)
         img = open(str(file_path), 'rb')
         return img
 
