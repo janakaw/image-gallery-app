@@ -1,0 +1,517 @@
+{
+    "sliders": [
+        {
+            "img": "http://localhost/static/slider/H900-0.jpg",
+            "caption": "Commercial_Childcare_NSW",
+            "title": "Developer\n"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-1.jpg",
+            "caption": "Commercial_Alexander_project_ACT",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-2.jpg",
+            "caption": "Residential_Baulkham_hills_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-3.jpg",
+            "caption": "Residential_Baulkham_hills_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-4.jpg",
+            "caption": "Monash_ACT_Brite_development",
+            "title": "Developer\n"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-5.jpg",
+            "caption": "Residential_Kitchen_design_ACT",
+            "title": "_Designer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-6.jpg",
+            "caption": "Residential_brisbane_project",
+            "title": "Developer\n"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-7.jpg",
+            "caption": "Seoul_project",
+            "title": "Developer\n"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-8.jpg",
+            "caption": "Residential_Multi_unit_project",
+            "title": "_Architect"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-9.jpg",
+            "caption": "Residential_Ryde_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-10.jpg",
+            "caption": "Residential_Woolware_rd_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-11.jpg",
+            "caption": "Commercial_Googong_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-12.jpg",
+            "caption": "Commercial_Rivett_ACT",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-13.jpg",
+            "caption": "Residential_Baulkham_hills_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-14.jpg",
+            "caption": "Residential_Baulkham_hills_NSW",
+            "title": "_Developer"
+        },
+        {
+            "img": "http://localhost/static/slider/H900-15.jpg",
+            "caption": "Residential_Baulkham_hills_NSW",
+            "title": "_Developer"
+        }
+    ],
+    "projects": [
+        {
+            "id": "0",
+            "main_image": "http://localhost/static/projects/0/H380-0.jpg",
+            "image": "http://localhost/static/projects/0/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/0/H380-0.jpg",
+                "http://localhost/static/projects/0/H380-1.jpg",
+                "http://localhost/static/projects/0/H380-2.jpg",
+                "http://localhost/static/projects/0/H380-3.jpg",
+                "http://localhost/static/projects/0/H380-4.jpg"
+            ],
+            "title": "Commercial_Alexander_project_ACT",
+            "description": "_Developer"
+        },
+        {
+            "id": "1",
+            "main_image": "http://localhost/static/projects/1/H380-0.jpg",
+            "image": "http://localhost/static/projects/1/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/1/H380-0.jpg",
+                "http://localhost/static/projects/1/H380-1.jpg",
+                "http://localhost/static/projects/1/H380-2.jpg"
+            ],
+            "title": "Commercial_Aranda_project_ACT",
+            "description": "_Developer"
+        },
+        {
+            "id": "10",
+            "main_image": "http://localhost/static/projects/10/H380-0.jpg",
+            "image": "http://localhost/static/projects/10/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/10/H380-0.jpg",
+                "http://localhost/static/projects/10/H380-1.jpg"
+            ],
+            "title": "Commercial_Taylor_ACT",
+            "description": "_Developer"
+        },
+        {
+            "id": "11",
+            "main_image": "http://localhost/static/projects/11/H380-0.jpg",
+            "image": "http://localhost/static/projects/11/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/11/H380-0.jpg",
+                "http://localhost/static/projects/11/H380-1.jpg"
+            ],
+            "title": "Commercial_WagaWaga_Centerlink_NSW",
+            "description": "_Architect"
+        },
+        {
+            "id": "12",
+            "main_image": "http://localhost/static/projects/12/H380-0.jpg",
+            "image": "http://localhost/static/projects/12/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/12/H380-0.jpg",
+                "http://localhost/static/projects/12/H380-1.jpg",
+                "http://localhost/static/projects/12/H380-2.jpg",
+                "http://localhost/static/projects/12/H380-3.jpg"
+            ],
+            "title": "Commercial_Whyllar_ACT",
+            "description": "_Developer"
+        },
+        {
+            "id": "13",
+            "main_image": "http://localhost/static/projects/13/H380-0.jpg",
+            "image": "http://localhost/static/projects/13/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/13/H380-0.jpg",
+                "http://localhost/static/projects/13/H380-1.jpg",
+                "http://localhost/static/projects/13/H380-2.jpg",
+                "http://localhost/static/projects/13/H380-3.jpg",
+                "http://localhost/static/projects/13/H380-4.jpg"
+            ],
+            "title": "Commercial_Young_street_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "14",
+            "main_image": "http://localhost/static/projects/14/H380-0.jpg",
+            "image": "http://localhost/static/projects/14/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/14/H380-0.jpg",
+                "http://localhost/static/projects/14/H380-1.jpg",
+                "http://localhost/static/projects/14/H380-2.jpg",
+                "http://localhost/static/projects/14/H380-3.jpg",
+                "http://localhost/static/projects/14/H380-4.jpg"
+            ],
+            "title": "Commerical_Pat_project_Seoul",
+            "description": "Developer"
+        },
+        {
+            "id": "15",
+            "main_image": "http://localhost/static/projects/15/H380-0.jpg",
+            "image": "http://localhost/static/projects/15/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/15/H380-0.jpg"
+            ],
+            "title": "Facotry_Bungendore_NSW",
+            "description": "Developer"
+        },
+        {
+            "id": "16",
+            "main_image": "http://localhost/static/projects/16/H380-0.jpg",
+            "image": "http://localhost/static/projects/16/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/16/H380-0.jpg",
+                "http://localhost/static/projects/16/H380-1.jpg",
+                "http://localhost/static/projects/16/H380-2.jpg",
+                "http://localhost/static/projects/16/H380-3.jpg",
+                "http://localhost/static/projects/16/H380-4.jpg",
+                "http://localhost/static/projects/16/H380-5.jpg",
+                "http://localhost/static/projects/16/H380-6.jpg",
+                "http://localhost/static/projects/16/H380-7.jpg",
+                "http://localhost/static/projects/16/H380-8.jpg",
+                "http://localhost/static/projects/16/H380-9.jpg",
+                "http://localhost/static/projects/16/H380-10.jpg",
+                "http://localhost/static/projects/16/H380-11.jpg"
+            ],
+            "title": "Residential_3d_floor_plan",
+            "description": "Developer"
+        },
+        {
+            "id": "17",
+            "main_image": "http://localhost/static/projects/17/H380-0.jpg",
+            "image": "http://localhost/static/projects/17/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/17/H380-0.jpg",
+                "http://localhost/static/projects/17/H380-1.jpg",
+                "http://localhost/static/projects/17/H380-2.jpg",
+                "http://localhost/static/projects/17/H380-3.jpg",
+                "http://localhost/static/projects/17/H380-4.jpg",
+                "http://localhost/static/projects/17/H380-5.jpg",
+                "http://localhost/static/projects/17/H380-6.jpg",
+                "http://localhost/static/projects/17/H380-7.jpg",
+                "http://localhost/static/projects/17/H380-8.jpg"
+            ],
+            "title": "Residential_Baulkham_hills_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "18",
+            "main_image": "http://localhost/static/projects/18/H380-0.jpg",
+            "image": "http://localhost/static/projects/18/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/18/H380-0.jpg",
+                "http://localhost/static/projects/18/H380-1.jpg",
+                "http://localhost/static/projects/18/H380-2.jpg",
+                "http://localhost/static/projects/18/H380-3.jpg",
+                "http://localhost/static/projects/18/H380-4.jpg",
+                "http://localhost/static/projects/18/H380-5.jpg",
+                "http://localhost/static/projects/18/H380-6.jpg",
+                "http://localhost/static/projects/18/H380-7.jpg",
+                "http://localhost/static/projects/18/H380-8.jpg",
+                "http://localhost/static/projects/18/H380-9.jpg",
+                "http://localhost/static/projects/18/H380-10.jpg",
+                "http://localhost/static/projects/18/H380-11.jpg"
+            ],
+            "title": "Residential_Baulkham_hills_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "19",
+            "main_image": "http://localhost/static/projects/19/H380-0.jpg",
+            "image": "http://localhost/static/projects/19/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/19/H380-0.jpg",
+                "http://localhost/static/projects/19/H380-1.jpg"
+            ],
+            "title": "Residential_Casey_ACT",
+            "description": "_Designer"
+        },
+        {
+            "id": "2",
+            "main_image": "http://localhost/static/projects/2/H380-0.jpg",
+            "image": "http://localhost/static/projects/2/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/2/H380-0.jpg"
+            ],
+            "title": "Commercial_Childcare_NSW",
+            "description": "Developer"
+        },
+        {
+            "id": "20",
+            "main_image": "http://localhost/static/projects/20/H380-0.jpg",
+            "image": "http://localhost/static/projects/20/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/20/H380-0.jpg",
+                "http://localhost/static/projects/20/H380-1.jpg",
+                "http://localhost/static/projects/20/H380-2.jpg",
+                "http://localhost/static/projects/20/H380-3.jpg",
+                "http://localhost/static/projects/20/H380-4.jpg",
+                "http://localhost/static/projects/20/H380-5.jpg",
+                "http://localhost/static/projects/20/H380-6.jpg",
+                "http://localhost/static/projects/20/H380-7.jpg"
+            ],
+            "title": "Residentialcommercial_Casey_ACT",
+            "description": "_Architect"
+        },
+        {
+            "id": "21",
+            "main_image": "http://localhost/static/projects/21/H380-0.jpg",
+            "image": "http://localhost/static/projects/21/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/21/H380-0.jpg",
+                "http://localhost/static/projects/21/H380-1.jpg",
+                "http://localhost/static/projects/21/H380-2.jpg",
+                "http://localhost/static/projects/21/H380-3.jpg",
+                "http://localhost/static/projects/21/H380-4.jpg"
+            ],
+            "title": "Residentialcommercial_Monash_ACT_Developer",
+            "description": "_Brite_Development"
+        },
+        {
+            "id": "22",
+            "main_image": "http://localhost/static/projects/22/H380-0.jpg",
+            "image": "http://localhost/static/projects/22/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/22/H380-0.jpg",
+                "http://localhost/static/projects/22/H380-1.jpg",
+                "http://localhost/static/projects/22/H380-2.jpg"
+            ],
+            "title": "Residential_Corlette_NSW",
+            "description": "_Architect"
+        },
+        {
+            "id": "23",
+            "main_image": "http://localhost/static/projects/23/H380-0.jpg",
+            "image": "http://localhost/static/projects/23/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/23/H380-0.jpg"
+            ],
+            "title": "Residential_Kitchen_design_ACT",
+            "description": "_Designer"
+        },
+        {
+            "id": "24",
+            "main_image": "http://localhost/static/projects/24/H380-0.jpg",
+            "image": "http://localhost/static/projects/24/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/24/H380-0.jpg"
+            ],
+            "title": "Residential_Kitchen_render_NSW",
+            "description": "Developer"
+        },
+        {
+            "id": "25",
+            "main_image": "http://localhost/static/projects/25/H380-0.jpg",
+            "image": "http://localhost/static/projects/25/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/25/H380-0.jpg"
+            ],
+            "title": "Residential_Lambton_NSW",
+            "description": "_Architect"
+        },
+        {
+            "id": "26",
+            "main_image": "http://localhost/static/projects/26/H380-0.jpg",
+            "image": "http://localhost/static/projects/26/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/26/H380-0.jpg",
+                "http://localhost/static/projects/26/H380-1.jpg",
+                "http://localhost/static/projects/26/H380-2.jpg",
+                "http://localhost/static/projects/26/H380-3.jpg",
+                "http://localhost/static/projects/26/H380-4.jpg"
+            ],
+            "title": "Residential_Multi_residential_project",
+            "description": "_QLD"
+        },
+        {
+            "id": "27",
+            "main_image": "http://localhost/static/projects/27/H380-0.jpg",
+            "image": "http://localhost/static/projects/27/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/27/H380-0.jpg",
+                "http://localhost/static/projects/27/H380-1.jpg"
+            ],
+            "title": "Residential_Multi_residential_unit_Seoul",
+            "description": "Developer"
+        },
+        {
+            "id": "28",
+            "main_image": "http://localhost/static/projects/28/H380-0.jpg",
+            "image": "http://localhost/static/projects/28/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/28/H380-0.jpg",
+                "http://localhost/static/projects/28/H380-1.jpg",
+                "http://localhost/static/projects/28/H380-2.jpg"
+            ],
+            "title": "Residential_Multi_unit_project",
+            "description": "_Architect"
+        },
+        {
+            "id": "29",
+            "main_image": "http://localhost/static/projects/29/H380-0.jpg",
+            "image": "http://localhost/static/projects/29/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/29/H380-0.jpg"
+            ],
+            "title": "Residential_Retired_house_SA",
+            "description": "_developer"
+        },
+        {
+            "id": "3",
+            "main_image": "http://localhost/static/projects/3/H380-0.jpg",
+            "image": "http://localhost/static/projects/3/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/3/H380-0.jpg"
+            ],
+            "title": "Commercial_Childcare_Sunshinebay_NSW",
+            "description": "Developer"
+        },
+        {
+            "id": "30",
+            "main_image": "http://localhost/static/projects/30/H380-0.jpg",
+            "image": "http://localhost/static/projects/30/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/30/H380-0.jpg"
+            ],
+            "title": "Residential_Ryde_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "31",
+            "main_image": "http://localhost/static/projects/31/H380-0.jpg",
+            "image": "http://localhost/static/projects/31/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/31/H380-0.jpg",
+                "http://localhost/static/projects/31/H380-1.jpg"
+            ],
+            "title": "Residential_Unit_interior_VIC",
+            "description": "Developer"
+        },
+        {
+            "id": "32",
+            "main_image": "http://localhost/static/projects/32/H380-0.jpg",
+            "image": "http://localhost/static/projects/32/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/32/H380-0.jpg",
+                "http://localhost/static/projects/32/H380-1.jpg",
+                "http://localhost/static/projects/32/H380-2.jpg",
+                "http://localhost/static/projects/32/H380-3.jpg",
+                "http://localhost/static/projects/32/H380-4.jpg",
+                "http://localhost/static/projects/32/H380-5.jpg"
+            ],
+            "title": "Residential_Woolware_rd_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "33",
+            "main_image": "http://localhost/static/projects/33/H380-0.jpg",
+            "image": "http://localhost/static/projects/33/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/33/H380-0.jpg"
+            ],
+            "title": "Taylor_ACT_developer_Shane",
+            "description": "Developer"
+        },
+        {
+            "id": "4",
+            "main_image": "http://localhost/static/projects/4/H380-0.jpg",
+            "image": "http://localhost/static/projects/4/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/4/H380-0.jpg",
+                "http://localhost/static/projects/4/H380-1.jpg",
+                "http://localhost/static/projects/4/H380-2.jpg",
+                "http://localhost/static/projects/4/H380-3.jpg",
+                "http://localhost/static/projects/4/H380-4.jpg"
+            ],
+            "title": "Commercial_Googong_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "5",
+            "main_image": "http://localhost/static/projects/5/H380-0.jpg",
+            "image": "http://localhost/static/projects/5/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/5/H380-0.jpg",
+                "http://localhost/static/projects/5/H380-1.jpg",
+                "http://localhost/static/projects/5/H380-2.jpg"
+            ],
+            "title": "Commercial_Goulburn_childcare_NSW",
+            "description": "_Developer"
+        },
+        {
+            "id": "6",
+            "main_image": "http://localhost/static/projects/6/H380-0.jpg",
+            "image": "http://localhost/static/projects/6/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/6/H380-0.jpg",
+                "http://localhost/static/projects/6/H380-1.jpg",
+                "http://localhost/static/projects/6/H380-2.jpg",
+                "http://localhost/static/projects/6/H380-3.jpg",
+                "http://localhost/static/projects/6/H380-4.jpg"
+            ],
+            "title": "Commercial_Office_design_ACT",
+            "description": "_Designer"
+        },
+        {
+            "id": "7",
+            "main_image": "http://localhost/static/projects/7/H380-0.jpg",
+            "image": "http://localhost/static/projects/7/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/7/H380-0.jpg"
+            ],
+            "title": "Commercial_Queanbeyan_childcare",
+            "description": "_Developer"
+        },
+        {
+            "id": "8",
+            "main_image": "http://localhost/static/projects/8/H380-0.jpg",
+            "image": "http://localhost/static/projects/8/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/8/H380-0.jpg",
+                "http://localhost/static/projects/8/H380-1.jpg",
+                "http://localhost/static/projects/8/H380-2.jpg",
+                "http://localhost/static/projects/8/H380-3.jpg"
+            ],
+            "title": "Commercial_Rivett_ACT",
+            "description": "_Developer"
+        },
+        {
+            "id": "9",
+            "main_image": "http://localhost/static/projects/9/H380-0.jpg",
+            "image": "http://localhost/static/projects/9/H380-0.jpg",
+            "images": [
+                "http://localhost/static/projects/9/H380-0.jpg",
+                "http://localhost/static/projects/9/H380-1.jpg",
+                "http://localhost/static/projects/9/H380-2.jpg"
+            ],
+            "title": "Commercial_Sunshine_Bay_NSW",
+            "description": "_Developer"
+        }
+    ]
+}
